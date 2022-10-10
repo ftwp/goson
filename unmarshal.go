@@ -26,7 +26,7 @@ func unmarshalJSON(data []byte, value reflect.Value) (reflect.Value, error) {
 			value = reflect.New(sourceType.Elem())
 		}
 		e = value.Elem()
-		//e = reflect.New(value.Elem().Type()).Elem()
+
 	}
 
 	p := e.Type()
